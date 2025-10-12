@@ -47,7 +47,7 @@ export const translations = {
       service5Desc: 'Apoio especializado para brasileiros no exterior enfrentando desafios de adaptação, identidade e pertencimento em novo país.',
       service6Title: 'Desenvolvimento Pessoal',
       service6Desc: 'Trabalhando autoestima, confiança e habilidades emocionais para alcançar seus objetivos pessoais e profissionais.',
-      priceFrom: 'A partir de'
+      priceFrom: 'Valor a combinar'
     },
     testimonials: {
       title: 'O que dizem',
@@ -129,7 +129,7 @@ export const translations = {
       service5Desc: 'Specialized support for Brazilians abroad facing challenges of adaptation, identity, and belonging in a new country.',
       service6Title: 'Personal Development',
       service6Desc: 'Working on self-esteem, confidence, and emotional skills to achieve your personal and professional goals.',
-      priceFrom: 'Starting at'
+      priceFrom: 'Price to be arranged'
     },
     testimonials: {
       title: 'What my',
@@ -211,7 +211,7 @@ export const translations = {
       service5Desc: 'Apoyo especializado para brasileños en el exterior enfrentando desafíos de adaptación, identidad y pertenencia en nuevo país.',
       service6Title: 'Desarrollo Personal',
       service6Desc: 'Trabajando autoestima, confianza y habilidades emocionales para alcanzar tus objetivos personales y profesionales.',
-      priceFrom: 'Desde'
+      priceFrom: 'Precio a convenir'
     },
     testimonials: {
       title: 'Lo que dicen',
@@ -293,7 +293,7 @@ export const translations = {
       service5Desc: 'Spezialisierte Unterstützung für Brasilianer im Ausland, die mit Herausforderungen der Anpassung, Identität und Zugehörigkeit in einem neuen Land konfrontiert sind.',
       service6Title: 'Persönliche Entwicklung',
       service6Desc: 'Arbeit an Selbstwertgefühl, Vertrauen und emotionalen Fähigkeiten, um Ihre persönlichen und beruflichen Ziele zu erreichen.',
-      priceFrom: 'Ab'
+      priceFrom: 'Preis nach Vereinbarung'
     },
     testimonials: {
       title: 'Was meine',

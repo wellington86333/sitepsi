@@ -49,42 +49,42 @@ function App() {
       icon: Heart,
       title: t.services.service1Title,
       description: t.services.service1Desc,
-      price: `${t.services.priceFrom} R$ 50`,
+      price: t.services.priceFrom,
       color: 'text-[#87A96B]'
     },
     {
       icon: Sun,
       title: t.services.service2Title,
       description: t.services.service2Desc,
-      price: `${t.services.priceFrom} R$ 50`,
+      price: t.services.priceFrom,
       color: 'text-[#D4A574]'
     },
     {
       icon: Users,
       title: t.services.service3Title,
       description: t.services.service3Desc,
-      price: `${t.services.priceFrom} R$ 60`,
+      price: t.services.priceFrom,
       color: 'text-[#6B8E8E]'
     },
     {
       icon: Lightbulb,
       title: t.services.service4Title,
       description: t.services.service4Desc,
-      price: `${t.services.priceFrom} R$ 50`,
+      price: t.services.priceFrom,
       color: 'text-[#87A96B]'
     },
     {
       icon: Brain,
       title: t.services.service5Title,
       description: t.services.service5Desc,
-      price: `${t.services.priceFrom} R$ 50`,
+      price: t.services.priceFrom,
       color: 'text-[#D4A574]'
     },
     {
       icon: Sparkles,
       title: t.services.service6Title,
       description: t.services.service6Desc,
-      price: `${t.services.priceFrom} R$ 50`,
+      price: t.services.priceFrom,
       color: 'text-[#6B8E8E]'
     }
   ]
