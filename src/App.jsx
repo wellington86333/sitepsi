@@ -274,14 +274,10 @@ function App() {
               </div>
               
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-4 mt-12 pt-8 border-t border-[#87A96B]/20">
+              <div className="grid grid-cols-2 gap-4 mt-12 pt-8 border-t border-[#87A96B]/20">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-[#87A96B]">500+</div>
                   <div className="text-sm text-[#5D4E37]/70">{t.hero.stats.sessions}</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-[#D4A574]">3 {language === 'pt' ? 'anos' : language === 'en' ? 'years' : language === 'es' ? 'años' : 'Jahre'}</div>
-                  <div className="text-sm text-[#5D4E37]/70">{t.hero.stats.experience}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-[#6B8E8E]">100%</div>

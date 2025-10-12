@@ -23,7 +23,7 @@ export const translations = {
     about: {
       title: 'Sobre',
       titleHighlight: 'Wellington Brito',
-      description: 'Psicólogo com CRP 02/15189, especializado em atendimento online para brasileiros no exterior. Com mais de 3 anos de experiência e 500+ atendimentos realizados, meu compromisso é oferecer um espaço seguro e acolhedor para seu crescimento e bem-estar emocional.',
+      description: 'Psicólogo com CRP 02/15189, especializado em atendimento online para brasileiros no exterior. Com 500+ atendimentos realizados, meu compromisso é oferecer um espaço seguro e acolhedor para seu crescimento e bem-estar emocional.',
       card1Title: 'Valores Sociais',
       card1Text: 'Atendimento com valores adaptados à sua realidade financeira. Acredito que cuidar da saúde mental deve ser acessível a todos.',
       card2Title: 'Especialização',
@@ -105,7 +105,7 @@ export const translations = {
     about: {
       title: 'About',
       titleHighlight: 'Wellington Brito',
-      description: 'Psychologist with CRP 02/15189, specialized in online care for Brazilians abroad. With over 3 years of experience and 500+ sessions completed, my commitment is to offer a safe and welcoming space for your growth and emotional well-being.',
+      description: 'Psychologist with CRP 02/15189, specialized in online care for Brazilians abroad. With 500+ sessions completed, my commitment is to offer a safe and welcoming space for your growth and emotional well-being.',
       card1Title: 'Social Values',
       card1Text: 'Care with values adapted to your financial reality. I believe that taking care of mental health should be accessible to everyone.',
       card2Title: 'Specialization',
@@ -187,7 +187,7 @@ export const translations = {
     about: {
       title: 'Sobre',
       titleHighlight: 'Wellington Brito',
-      description: 'Psicólogo con CRP 02/15189, especializado en atención online para brasileños en el exterior. Con más de 3 años de experiencia y 500+ atenciones realizadas, mi compromiso es ofrecer un espacio seguro y acogedor para tu crecimiento y bienestar emocional.',
+      description: 'Psicólogo con CRP 02/15189, especializado en atención online para brasileños en el exterior. Con 500+ atenciones realizadas, mi compromiso es ofrecer un espacio seguro y acogedor para tu crecimiento y bienestar emocional.',
       card1Title: 'Valores Sociales',
       card1Text: 'Atención con valores adaptados a tu realidad financiera. Creo que cuidar la salud mental debe ser accesible para todos.',
       card2Title: 'Especialización',
@@ -269,7 +269,7 @@ export const translations = {
     about: {
       title: 'Über',
       titleHighlight: 'Wellington Brito',
-      description: 'Psychologe mit CRP 02/15189, spezialisiert auf Online-Betreuung für Brasilianer im Ausland. Mit über 3 Jahren Erfahrung und 500+ durchgeführten Sitzungen ist es mein Engagement, einen sicheren und einladenden Raum für Ihr Wachstum und emotionales Wohlbefinden zu bieten.',
+      description: 'Psychologe mit CRP 02/15189, spezialisiert auf Online-Betreuung für Brasilianer im Ausland. Mit 500+ durchgeführten Sitzungen ist es mein Engagement, einen sicheren und einladenden Raum für Ihr Wachstum und emotionales Wohlbefinden zu bieten.',
       card1Title: 'Soziale Werte',
       card1Text: 'Betreuung mit an Ihre finanzielle Realität angepassten Werten. Ich glaube, dass die Pflege der psychischen Gesundheit für alle zugänglich sein sollte.',
       card2Title: 'Spezialisierung',
