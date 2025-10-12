@@ -512,7 +512,7 @@ function App() {
                     <Phone className="w-6 h-6 text-[#87A96B] mt-1" />
                     <div>
                       <h3 className="font-semibold text-[#5D4E37] mb-1">{t.contact.whatsapp}</h3>
-                      <p className="text-[#5D4E37]/70">+55 (XX) XXXXX-XXXX</p>
+                      <p className="text-[#5D4E37]/70">+55 (81) 99690-3004</p>
                       <p className="text-sm text-[#87A96B] mt-2">{t.contact.whatsappAvailable}</p>
                     </div>
                   </div>
