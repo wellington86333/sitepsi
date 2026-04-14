@@ -50,42 +50,42 @@ function App() {
       title: t.services.service1Title,
       description: t.services.service1Desc,
       price: t.services.priceFrom,
-      color: 'text-[#87A96B]'
+      color: 'text-[#7BA05B]'
     },
     {
       icon: Sun,
       title: t.services.service2Title,
       description: t.services.service2Desc,
       price: t.services.priceFrom,
-      color: 'text-[#D4A574]'
+      color: 'text-[#C4A484]'
     },
     {
       icon: Users,
       title: t.services.service3Title,
       description: t.services.service3Desc,
       price: t.services.priceFrom,
-      color: 'text-[#6B8E8E]'
+      color: 'text-[#5A8A8A]'
     },
     {
       icon: Lightbulb,
       title: t.services.service4Title,
       description: t.services.service4Desc,
       price: t.services.priceFrom,
-      color: 'text-[#87A96B]'
+      color: 'text-[#7BA05B]'
     },
     {
       icon: Brain,
       title: t.services.service5Title,
       description: t.services.service5Desc,
       price: t.services.priceFrom,
-      color: 'text-[#D4A574]'
+      color: 'text-[#C4A484]'
     },
     {
       icon: Sparkles,
       title: t.services.service6Title,
       description: t.services.service6Desc,
       price: t.services.priceFrom,
-      color: 'text-[#6B8E8E]'
+      color: 'text-[#5A8A8A]'
     }
   ]
 
@@ -108,29 +108,29 @@ function App() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#F7F5F3] to-[#E8E6E1]">
+    <div className="min-h-screen bg-gradient-to-b from-[#F8F6F3] to-[#EAE7E2]">
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-md' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="font-display text-xl font-semibold text-[#5D4E37]">
-                Wellington Brito <span className="text-[#87A96B]">- Psicólogo</span>
+              <h1 className="font-display text-xl font-semibold text-[#4A5568]">
+                Wellington Brito <span className="text-[#7BA05B]">- Psicólogo</span>
               </h1>
             </div>
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <button onClick={() => scrollToSection('home')} className="nav-link text-[#5D4E37] hover:text-[#87A96B] px-3 py-2 text-sm font-medium">
+              <button onClick={() => scrollToSection('home')} className="nav-link text-[#4A5568] hover:text-[#7BA05B] px-3 py-2 text-sm font-medium">
                 {t.nav.home}
               </button>
-              <button onClick={() => scrollToSection('sobre')} className="nav-link text-[#5D4E37] hover:text-[#87A96B] px-3 py-2 text-sm font-medium">
+              <button onClick={() => scrollToSection('sobre')} className="nav-link text-[#4A5568] hover:text-[#7BA05B] px-3 py-2 text-sm font-medium">
                 {t.nav.about}
               </button>
-              <button onClick={() => scrollToSection('servicos')} className="nav-link text-[#5D4E37] hover:text-[#87A96B] px-3 py-2 text-sm font-medium">
+              <button onClick={() => scrollToSection('servicos')} className="nav-link text-[#4A5568] hover:text-[#7BA05B] px-3 py-2 text-sm font-medium">
                 {t.nav.services}
               </button>
-              <button onClick={() => scrollToSection('contato')} className="nav-link text-[#5D4E37] hover:text-[#87A96B] px-3 py-2 text-sm font-medium">
+              <button onClick={() => scrollToSection('contato')} className="nav-link text-[#4A5568] hover:text-[#7BA05B] px-3 py-2 text-sm font-medium">
                 {t.nav.contact}
               </button>
               
@@ -138,7 +138,7 @@ function App() {
               <div className="relative">
                 <button 
                   onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
-                  className="flex items-center space-x-2 text-[#5D4E37] hover:text-[#87A96B] px-3 py-2 text-sm font-medium transition-colors"
+                  className="flex items-center space-x-2 text-[#4A5568] hover:text-[#7BA05B] px-3 py-2 text-sm font-medium transition-colors"
                 >
                   <Globe className="w-4 h-4" />
                   <span>{languages.find(l => l.code === language)?.flag}</span>
@@ -150,14 +150,14 @@ function App() {
                       initial={{ opacity: 0, y: -10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
-                      className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-[#87A96B]/20 overflow-hidden"
+                      className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-[#7BA05B]/20 overflow-hidden"
                     >
                       {languages.map((lang) => (
                         <button
                           key={lang.code}
                           onClick={() => changeLanguage(lang.code)}
-                          className={`w-full text-left px-4 py-3 hover:bg-[#87A96B]/10 transition-colors flex items-center space-x-3 ${
-                            language === lang.code ? 'bg-[#87A96B]/5 text-[#87A96B]' : 'text-[#5D4E37]'
+                          className={`w-full text-left px-4 py-3 hover:bg-[#7BA05B]/10 transition-colors flex items-center space-x-3 ${
+                            language === lang.code ? 'bg-[#7BA05B]/5 text-[#7BA05B]' : 'text-[#4A5568]'
                           }`}
                         >
                           <span className="text-xl">{lang.flag}</span>
@@ -174,11 +174,11 @@ function App() {
             <div className="md:hidden flex items-center space-x-2">
               <button 
                 onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
-                className="text-[#5D4E37] hover:text-[#87A96B] p-2"
+                className="text-[#4A5568] hover:text-[#7BA05B] p-2"
               >
                 <Globe className="h-5 w-5" />
               </button>
-              <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-[#5D4E37] hover:text-[#87A96B]">
+              <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-[#4A5568] hover:text-[#7BA05B]">
                 {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
             </div>
@@ -192,7 +192,7 @@ function App() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-white border-t border-[#87A96B]/20"
+              className="md:hidden bg-white border-t border-[#7BA05B]/20"
             >
               <div className="px-2 py-2 grid grid-cols-2 gap-2">
                 {languages.map((lang) => (
@@ -200,7 +200,7 @@ function App() {
                     key={lang.code}
                     onClick={() => changeLanguage(lang.code)}
                     className={`px-3 py-2 rounded-lg flex items-center space-x-2 justify-center transition-colors ${
-                      language === lang.code ? 'bg-[#87A96B] text-white' : 'bg-[#F7F5F3] text-[#5D4E37] hover:bg-[#87A96B]/10'
+                      language === lang.code ? 'bg-[#7BA05B] text-white' : 'bg-[#F8F6F3] text-[#4A5568] hover:bg-[#7BA05B]/10'
                     }`}
                   >
                     <span>{lang.flag}</span>
@@ -217,13 +217,13 @@ function App() {
           <motion.div 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="md:hidden bg-white border-t border-[#87A96B]/20"
+            className="md:hidden bg-white border-t border-[#7BA05B]/20"
           >
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <button onClick={() => scrollToSection('home')} className="block w-full text-left px-3 py-2 text-[#5D4E37] hover:text-[#87A96B]">{t.nav.home}</button>
-              <button onClick={() => scrollToSection('sobre')} className="block w-full text-left px-3 py-2 text-[#5D4E37] hover:text-[#87A96B]">{t.nav.about}</button>
-              <button onClick={() => scrollToSection('servicos')} className="block w-full text-left px-3 py-2 text-[#5D4E37] hover:text-[#87A96B]">{t.nav.services}</button>
-              <button onClick={() => scrollToSection('contato')} className="block w-full text-left px-3 py-2 text-[#5D4E37] hover:text-[#87A96B]">{t.nav.contact}</button>
+              <button onClick={() => scrollToSection('home')} className="block w-full text-left px-3 py-2 text-[#4A5568] hover:text-[#7BA05B]">{t.nav.home}</button>
+              <button onClick={() => scrollToSection('sobre')} className="block w-full text-left px-3 py-2 text-[#4A5568] hover:text-[#7BA05B]">{t.nav.about}</button>
+              <button onClick={() => scrollToSection('servicos')} className="block w-full text-left px-3 py-2 text-[#4A5568] hover:text-[#7BA05B]">{t.nav.services}</button>
+              <button onClick={() => scrollToSection('contato')} className="block w-full text-left px-3 py-2 text-[#4A5568] hover:text-[#7BA05B]">{t.nav.contact}</button>
             </div>
           </motion.div>
         )}
@@ -246,42 +246,42 @@ function App() {
               className="text-center lg:text-left"
             >
               <div className="floating-element mb-6">
-                <h1 className="font-display text-4xl md:text-6xl font-bold text-[#5D4E37] mb-6 leading-tight">
+                <h1 className="font-display text-4xl md:text-6xl font-bold text-[#4A5568] mb-6 leading-tight">
                   {t.hero.title1}
                   <span className="gradient-text block">{t.hero.title2}</span>
                   {t.hero.title3}
                 </h1>
               </div>
               
-              <p className="text-lg md:text-xl text-[#5D4E37]/80 mb-8 leading-relaxed">
+              <p className="text-lg md:text-xl text-[#4A5568]/80 mb-8 leading-relaxed">
                 {t.hero.subtitle}
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button 
                   onClick={() => scrollToSection('contato')}
-                  className="bg-[#87A96B] text-white px-8 py-6 text-lg rounded-lg font-semibold hover:bg-[#87A96B]/90 transition-all duration-300 transform hover:scale-105"
+                  className="bg-[#7BA05B] text-white px-8 py-6 text-lg rounded-lg font-semibold hover:bg-[#7BA05B]/90 transition-all duration-300 transform hover:scale-105"
                 >
                   {t.hero.cta1}
                 </Button>
                 <Button 
                   onClick={() => scrollToSection('servicos')}
                   variant="outline"
-                  className="border-2 border-[#87A96B] text-[#87A96B] px-8 py-6 text-lg rounded-lg font-semibold hover:bg-[#87A96B] hover:text-white transition-all duration-300"
+                  className="border-2 border-[#7BA05B] text-[#7BA05B] px-8 py-6 text-lg rounded-lg font-semibold hover:bg-[#7BA05B] hover:text-white transition-all duration-300"
                 >
                   {t.hero.cta2}
                 </Button>
               </div>
               
               {/* Stats */}
-              <div className="grid grid-cols-2 gap-4 mt-12 pt-8 border-t border-[#87A96B]/20">
+              <div className="grid grid-cols-2 gap-4 mt-12 pt-8 border-t border-[#7BA05B]/20">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-[#87A96B]">500+</div>
-                  <div className="text-sm text-[#5D4E37]/70">{t.hero.stats.sessions}</div>
+                  <div className="text-2xl font-bold text-[#7BA05B]">500+</div>
+                  <div className="text-sm text-[#4A5568]/70">{t.hero.stats.sessions}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-[#6B8E8E]">100%</div>
-                  <div className="text-sm text-[#5D4E37]/70">{t.hero.stats.confidentiality}</div>
+                  <div className="text-2xl font-bold text-[#5A8A8A]">100%</div>
+                  <div className="text-sm text-[#4A5568]/70">{t.hero.stats.confidentiality}</div>
                 </div>
               </div>
             </motion.div>
@@ -303,8 +303,8 @@ function App() {
               </div>
               
               {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-[#87A96B]/20 rounded-full floating-element"></div>
-              <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-[#D4A574]/20 rounded-full floating-element" style={{animationDelay: '-2s'}}></div>
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-[#7BA05B]/20 rounded-full floating-element"></div>
+              <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-[#C4A484]/20 rounded-full floating-element" style={{animationDelay: '-2s'}}></div>
             </motion.div>
           </div>
         </div>
@@ -321,10 +321,10 @@ function App() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#5D4E37] mb-4">
-              {t.about.title} <span className="text-[#87A96B]">{t.about.titleHighlight}</span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#4A5568] mb-4">
+              {t.about.title} <span className="text-[#7BA05B]">{t.about.titleHighlight}</span>
             </h2>
-            <p className="text-lg text-[#5D4E37]/70 max-w-3xl mx-auto">
+            <p className="text-lg text-[#4A5568]/70 max-w-3xl mx-auto">
               {t.about.description}
             </p>
           </motion.div>
@@ -336,12 +336,12 @@ function App() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <Card className="border-[#87A96B]/20 hover:shadow-lg transition-shadow">
+              <Card className="border-[#7BA05B]/20 hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-[#87A96B]">{t.about.card1Title}</CardTitle>
+                  <CardTitle className="text-[#7BA05B]">{t.about.card1Title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-[#5D4E37]/70">
+                  <p className="text-[#4A5568]/70">
                     {t.about.card1Text}
                   </p>
                 </CardContent>
@@ -354,12 +354,12 @@ function App() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <Card className="border-[#D4A574]/20 hover:shadow-lg transition-shadow">
+              <Card className="border-[#C4A484]/20 hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-[#D4A574]">{t.about.card2Title}</CardTitle>
+                  <CardTitle className="text-[#C4A484]">{t.about.card2Title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-[#5D4E37]/70">
+                  <p className="text-[#4A5568]/70">
                     {t.about.card2Text}
                   </p>
                 </CardContent>
@@ -372,12 +372,12 @@ function App() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <Card className="border-[#6B8E8E]/20 hover:shadow-lg transition-shadow">
+              <Card className="border-[#5A8A8A]/20 hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-[#6B8E8E]">{t.about.card3Title}</CardTitle>
+                  <CardTitle className="text-[#5A8A8A]">{t.about.card3Title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-[#5D4E37]/70">
+                  <p className="text-[#4A5568]/70">
                     {t.about.card3Text}
                   </p>
                 </CardContent>
@@ -388,7 +388,7 @@ function App() {
       </section>
 
       {/* Serviços Section */}
-      <section id="servicos" className="py-20 bg-gradient-to-b from-white to-[#F7F5F3]">
+      <section id="servicos" className="py-20 bg-gradient-to-b from-white to-[#F8F6F3]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             key={`services-${language}`}
@@ -398,10 +398,10 @@ function App() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#5D4E37] mb-4">
-              {t.services.title} <span className="text-[#87A96B]">{t.services.titleHighlight}</span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#4A5568] mb-4">
+              {t.services.title} <span className="text-[#7BA05B]">{t.services.titleHighlight}</span>
             </h2>
-            <p className="text-lg text-[#5D4E37]/70 max-w-2xl mx-auto">
+            <p className="text-lg text-[#4A5568]/70 max-w-2xl mx-auto">
               {t.services.subtitle}
             </p>
           </motion.div>
@@ -415,15 +415,15 @@ function App() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <Card className="service-card bg-white border-[#87A96B]/10 h-full">
+                <Card className="service-card bg-white border-[#7BA05B]/10 h-full">
                   <CardHeader>
-                    <div className={`w-12 h-12 bg-[#87A96B]/10 rounded-lg flex items-center justify-center mb-4`}>
+                    <div className={`w-12 h-12 bg-[#7BA05B]/10 rounded-lg flex items-center justify-center mb-4`}>
                       <service.icon className={`w-6 h-6 ${service.color}`} />
                     </div>
-                    <CardTitle className="text-xl font-display text-[#5D4E37]">{service.title}</CardTitle>
+                    <CardTitle className="text-xl font-display text-[#4A5568]">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-[#5D4E37]/70 mb-4">
+                    <CardDescription className="text-[#4A5568]/70 mb-4">
                       {service.description}
                     </CardDescription>
                     <div className={`text-sm ${service.color} font-medium`}>{service.price}</div>
@@ -446,8 +446,8 @@ function App() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#5D4E37] mb-4">
-              {t.testimonials.title} <span className="text-[#87A96B]">{t.testimonials.titleHighlight}</span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#4A5568] mb-4">
+              {t.testimonials.title} <span className="text-[#7BA05B]">{t.testimonials.titleHighlight}</span>
             </h2>
           </motion.div>
 
@@ -460,13 +460,13 @@ function App() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <Card className="bg-white/90 backdrop-blur-sm border-[#87A96B]/20 h-full">
+                <Card className="bg-white/90 backdrop-blur-sm border-[#7BA05B]/20 h-full">
                   <CardHeader>
-                    <CardTitle className="text-[#5D4E37]">{testimonial.name}</CardTitle>
-                    <CardDescription className="text-[#87A96B]">{testimonial.location}</CardDescription>
+                    <CardTitle className="text-[#4A5568]">{testimonial.name}</CardTitle>
+                    <CardDescription className="text-[#7BA05B]">{testimonial.location}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-[#5D4E37]/70 italic">"{testimonial.text}"</p>
+                    <p className="text-[#4A5568]/70 italic">"{testimonial.text}"</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -476,7 +476,7 @@ function App() {
       </section>
 
       {/* Contato Section */}
-      <section id="contato" className="py-20 bg-gradient-to-b from-white to-[#F7F5F3]">
+      <section id="contato" className="py-20 bg-gradient-to-b from-white to-[#F8F6F3]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             key={`contact-${language}`}
@@ -486,10 +486,10 @@ function App() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#5D4E37] mb-4">
-              {t.contact.title} <span className="text-[#87A96B]">{t.contact.titleHighlight}</span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-[#4A5568] mb-4">
+              {t.contact.title} <span className="text-[#7BA05B]">{t.contact.titleHighlight}</span>
             </h2>
-            <p className="text-lg text-[#5D4E37]/70 max-w-2xl mx-auto">
+            <p className="text-lg text-[#4A5568]/70 max-w-2xl mx-auto">
               {t.contact.subtitle}
             </p>
           </motion.div>
@@ -502,41 +502,41 @@ function App() {
               transition={{ duration: 0.6 }}
               className="space-y-6"
             >
-              <Card className="border-[#87A96B]/20">
+              <Card className="border-[#7BA05B]/20">
                 <CardContent className="pt-6">
                   <div className="flex items-start space-x-4">
-                    <Phone className="w-6 h-6 text-[#87A96B] mt-1" />
+                    <Phone className="w-6 h-6 text-[#7BA05B] mt-1" />
                     <div>
-                      <h3 className="font-semibold text-[#5D4E37] mb-1">{t.contact.whatsapp}</h3>
-                      <p className="text-[#5D4E37]/70">+55 (81) 99690-3004</p>
-                      <p className="text-sm text-[#87A96B] mt-2">{t.contact.whatsappAvailable}</p>
+                      <h3 className="font-semibold text-[#4A5568] mb-1">{t.contact.whatsapp}</h3>
+                      <p className="text-[#4A5568]/70">+55 (81) 99690-3004</p>
+                      <p className="text-sm text-[#7BA05B] mt-2">{t.contact.whatsappAvailable}</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="border-[#D4A574]/20">
+              <Card className="border-[#C4A484]/20">
                 <CardContent className="pt-6">
                   <div className="flex items-start space-x-4">
-                    <Mail className="w-6 h-6 text-[#D4A574] mt-1" />
+                    <Mail className="w-6 h-6 text-[#C4A484] mt-1" />
                     <div>
-                      <h3 className="font-semibold text-[#5D4E37] mb-1">{t.contact.email}</h3>
-                      <p className="text-[#5D4E37]/70">wellington.brito@rocketmail.com</p>
-                      <p className="text-sm text-[#D4A574] mt-2">{t.contact.emailResponse}</p>
+                      <h3 className="font-semibold text-[#4A5568] mb-1">{t.contact.email}</h3>
+                      <p className="text-[#4A5568]/70">wellington.brito@rocketmail.com</p>
+                      <p className="text-sm text-[#C4A484] mt-2">{t.contact.emailResponse}</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="border-[#6B8E8E]/20">
+              <Card className="border-[#5A8A8A]/20">
                 <CardContent className="pt-6">
                   <div className="flex items-start space-x-4">
-                    <Clock className="w-6 h-6 text-[#6B8E8E] mt-1" />
+                    <Clock className="w-6 h-6 text-[#5A8A8A] mt-1" />
                     <div>
-                      <h3 className="font-semibold text-[#5D4E37] mb-1">{t.contact.schedule}</h3>
-                      <p className="text-[#5D4E37]/70">{t.contact.scheduleWeekday}</p>
-                      <p className="text-[#5D4E37]/70">{t.contact.scheduleSaturday}</p>
-                      <p className="text-sm text-[#6B8E8E] mt-2">{t.contact.scheduleTimezone}</p>
+                      <h3 className="font-semibold text-[#4A5568] mb-1">{t.contact.schedule}</h3>
+                      <p className="text-[#4A5568]/70">{t.contact.scheduleWeekday}</p>
+                      <p className="text-[#4A5568]/70">{t.contact.scheduleSaturday}</p>
+                      <p className="text-sm text-[#5A8A8A] mt-2">{t.contact.scheduleTimezone}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -549,25 +549,25 @@ function App() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <Card className="border-[#87A96B]/20 h-full">
+              <Card className="border-[#7BA05B]/20 h-full">
                 <CardHeader>
-                  <CardTitle className="text-[#5D4E37]">{t.contact.infoTitle}</CardTitle>
+                  <CardTitle className="text-[#4A5568]">{t.contact.infoTitle}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-[#5D4E37] mb-2">{t.contact.crp}</h4>
-                    <p className="text-[#5D4E37]/70">02/15189</p>
+                    <h4 className="font-semibold text-[#4A5568] mb-2">{t.contact.crp}</h4>
+                    <p className="text-[#4A5568]/70">02/15189</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-[#5D4E37] mb-2">{t.contact.modality}</h4>
-                    <p className="text-[#5D4E37]/70">{t.contact.modalityText}</p>
+                    <h4 className="font-semibold text-[#4A5568] mb-2">{t.contact.modality}</h4>
+                    <p className="text-[#4A5568]/70">{t.contact.modalityText}</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-[#5D4E37] mb-2">{t.contact.values}</h4>
-                    <p className="text-[#5D4E37]/70">{t.contact.valuesText}</p>
+                    <h4 className="font-semibold text-[#4A5568] mb-2">{t.contact.values}</h4>
+                    <p className="text-[#4A5568]/70">{t.contact.valuesText}</p>
                   </div>
-                  <div className="pt-4 border-t border-[#87A96B]/20">
-                    <p className="text-sm text-[#5D4E37]/60">
+                  <div className="pt-4 border-t border-[#7BA05B]/20">
+                    <p className="text-sm text-[#4A5568]/60">
                       <strong>{t.contact.warning}</strong> {t.contact.warningText}
                     </p>
                   </div>
@@ -579,7 +579,7 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#5D4E37] text-white py-8">
+      <footer className="bg-[#4A5568] text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h3 className="font-display text-xl font-semibold mb-2">Wellington Brito - Psicólogo</h3>
